@@ -1,0 +1,19 @@
+{
+  "name": "nodefiles",
+  "version": "14.15.4",
+  "description": "Simple Web App",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ml6723/intro-to-node.git"
+  },
+  "author": "Matea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ml6723/intro-to-node/issues"
+  },
+  "homepage": "https://github.com/ml6723/intro-to-node#readme"
+}
