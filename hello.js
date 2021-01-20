@@ -1,6 +1,8 @@
 var http = require('http');
 var fs = require('fs');
 var url = require('url');
+const PORT = process.env.PORT || 5000; //heroku
+
 
 http.createServer(function (req, res) {
 	//var baseURL = 'http://' + req.headers.host + '/';
@@ -12,7 +14,6 @@ http.createServer(function (req, res) {
 	if (filename == './') {
 		filename = './index';
 	}
-
 	filename = filename + '.html';
 
 	fs.readFile(filename, function(err, data){
@@ -24,7 +25,7 @@ http.createServer(function (req, res) {
 		res.write(data);
 		return res.end();
 	});
-}).listen(8080);
+}).listen(PORT);
 
 
 console.log('Server listening on port 8080...');
